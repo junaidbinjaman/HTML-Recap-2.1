@@ -1,0 +1,307 @@
+/* google font css import */
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+
+/* browser reset code */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* css root styles */
+:root {
+  --logo-font: "Festive", cursive;
+  --paragraph-font: "Open Sans Condensed", sans-serif;
+  --primary-color: #ee5253;
+  --text-color: #576574;
+  --bold-text: "Luckiest Guy", cursive;
+}
+
+/* header styles */
+
+.header-section {
+  box-shadow: 0px 1px 1px 0px lightgray;
+}
+
+.header {
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.header > .header-left h2 {
+  cursor: pointer;
+}
+
+.header > .header-left a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.header > .header-left h2 b {
+  color: var(--primary-color);
+  font-style: italic;
+}
+
+.header-left {
+  flex: 1;
+}
+
+.header-right {
+  flex: 2;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.header > .header-right ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.header > .header-right ul li {
+  display: inline-block;
+  padding: 7px 20px;
+  font-size: 18px;
+  color: var(--text-color);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.header > .header-right ul li:hover {
+  background-color: var(--text-color);
+  color: white;
+  transform: scaleX(1.1);
+}
+.header > .header-right ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.header > .header-right ul li a:hover {
+  color: white;
+}
+
+/* slider css style */
+
+.slide {
+  height: 450px;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-1 {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.slide-1 {
+  display: flex;
+  padding-right: 30px;
+}
+
+.slide-left {
+  flex: 3;
+}
+
+.slide-left h1 {
+  color: var(--text-color);
+  font-size: 45px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.slide-left p {
+  color: var(--text-color);
+  font-size: 18px;
+}
+
+.slide-right {
+  flex: 2;
+  text-align: right;
+}
+
+.slide-right img {
+  width: 380px;
+  height: 280px;
+  border-radius: 50%;
+  box-shadow: 5px -4px lightcyan;
+}
+
+.slide-left button {
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  border-radius: 40px;
+  margin-right: 10px;
+  color: black;
+  background-color: white;
+  font-family: var(--logo-font);
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+}
+
+.slide-left button:hover {
+  transform: scale(1.1);
+}
+
+/* about page */
+
+.logo-area {
+  width: 1180px;
+  margin-top: 200px;
+  margin: 30px auto;
+  box-shadow: 2px 2px 3px 0px lightgray;
+  border-top: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+  border-radius: 50px;
+  /* background-color: lightgray; */
+}
+
+.logo-area ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-area ul li img {
+  margin: 0 20px;
+}
+
+/* about content */
+.about-content {
+  width: 1280px;
+  margin: 50px auto;
+  text-align: left;
+}
+
+.about-content h1 {
+  color: black;
+}
+
+.about-divider {
+  background-color: rgba(0, 0, 0, 0.534);
+  height: 2px;
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.about-paragraph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-left {
+  flex: 2;
+}
+
+.about-left > p {
+  font-size: 20px;
+  width: 670px;
+}
+
+.about-right {
+  flex: 1;
+}
+
+.about-right ul {
+  list-style: none;
+}
+
+.about-right ul li {
+  font-size: 100px;
+  font-weight: bolder;
+  line-height: 30px;
+  font-family: var(--bold-text);
+}
+
+.about-right ul li:first-child {
+  margin-left: -70px;
+}
+
+.about-right ul li:nth-child(2) {
+  color: greenyellow;
+}
+
+.about-right ul li:nth-child(3) {
+  color: red;
+  margin-left: 70px;
+}
+
+.about-right ul li:nth-child(4) {
+  margin-left: 110px;
+  margin-top: 40px;
+  color: aquamarine;
+}
+
+.about-content p {
+  text-align: justify;
+}
+
+/* service section */
+
+.services {
+  width: 1280px;
+  margin: 20px auto;
+  display: flex;
+}
+
+.service-card {
+  box-shadow: 2px 2px 2px 0px lightgray;
+  border-top: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+  padding: 30px 25px;
+  margin: 0 10px;
+  text-align: left;
+  transition: all 0.2s ease-in-out;
+}
+
+.service-card h3 {
+  font-size: 25px;
+}
+
+.service-card:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 2px 4px rgba(211, 211, 211, 0.74);
+}
+
+/* contact section styles */
+
+.contact {
+  width: 800px;
+  margin: 50px auto;
+  box-shadow: 0px 2px 2px 0px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-top: 1px solid lightgray;
+  text-align: center;
+}
+
+.contact > form input {
+  border: none;
+  outline: none;
+  background-color: rgb(228, 226, 226);
+  margin: 10px 10px;
+  width: 600px;
+  height: 60px;
+  padding: 0 10px;
+}
+
+.contact > form > div input {
+  width: 290px;
+}
+
+.contact button {
+  border: none;
+  width: 280px;
+  height: 60px;
+}

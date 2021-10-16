@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="https://w7.pngwing.com/pngs/672/907/png-transparent-favicon-buggi-trademark-logo-circle.png"
+      type="image/x-icon"
+    />
+    <!-- bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Festive&family=Open+Sans+Condensed:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css link -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>HTML Recap</title>
+  </head>
+  <body>
+    <!-- header -->
+    <section class="header-section">
+      <div class="header">
+        <div class="header-left">
+          <a href="/">
+            <h2>Get The <b>HTML</b> Practice</h2>
+          </a>
+        </div>
+        <div class="header-right">
+          <nav>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#service">Services</a></li>
+              <li><a href="#contact">Contcat Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <!-- slider -->
+    <section class="slider" id="home">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="slide-1">
+              <div class="slide-left">
+                <h1>Hello, World. I Am Here</h1>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Totam, impedit vitae. Eius et aliquam esse quam unde ad fugiat
+                  laudantium.
+                </p>
+                <div>
+                  <button>Explore More</button>
+                  <button>Contcat Us</button>
+                </div>
+              </div>
+              <div class="slide-right">
+                <img
+                  src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?size=626&ext=jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="slide-1">
+              <div class="slide-left">
+                <h1>Let's Get Started</h1>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Totam, impedit vitae. Eius et aliquam esse quam unde ad fugiat
+                  laudantium.
+                </p>
+                <div>
+                  <button>Explore More</button>
+                  <button>Contcat Us</button>
+                </div>
+              </div>
+              <div class="slide-right">
+                <img
+                  src="https://images.unsplash.com/photo-1618588507085-c79565432917?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhdXRpZnVsJTIwbmF0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="slide-1">
+              <div class="slide-left">
+                <h1>Explore The World</h1>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Totam, impedit vitae. Eius et aliquam esse quam unde ad fugiat
+                  laudantium.
+                </p>
+                <div>
+                  <button>Explore More</button>
+                  <button>Contcat Us</button>
+                </div>
+              </div>
+              <div class="slide-right">
+                <img
+                  src="https://static01.nyt.com/images/2020/12/10/travel/10europe-02/10europe-02-mediumSquareAt3X.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- about section -->
+
+    <!-- about section logoes -->
+    <section class="about-section" id="about">
+      <div class="logo-area">
+        <ul>
+          <li>
+            <img
+              src="https://cdn.icon-icons.com/icons2/2699/PNG/512/apple_logo_icon_168588.png"
+              alt=""
+              width="180px"
+              height="100px"
+            />
+          </li>
+          <li>
+            <img
+              src="https://www.sjjww.org/uploads/1/3/2/6/13265177/facebok-icon_orig.jpg"
+              alt=""
+              width="180px"
+              height="90px"
+            />
+          </li>
+          <li>
+            <img
+              src="https://cdn.pixabay.com/photo/2013/02/12/09/07/microsoft-80659_1280.png"
+              alt=""
+              width="190px"
+            />
+          </li>
+          <li>
+            <img
+              src="https://www.freepnglogos.com/uploads/tesla-logo-png-20.png"
+              alt=""
+              width="180px"
+            />
+          </li>
+          <li>
+            <img
+              src="https://www.respectability.org/wp-content/uploads/2017/10/IBM.png"
+              alt=""
+              width="170px"
+            />
+          </li>
+        </ul>
+      </div>
+      <div class="about-text"></div>
+    </section>
+
+    <!-- about section content -->
+    <div class="about-content">
+      <div class="about-paragraph">
+        <div class="about-left">
+          <h1>Let's Know About Us</h1>
+          <div class="about-divider"></div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+            excepturi, architecto eum vel quibusdam dolore saepe impedit odio
+            blanditiis deserunt, natus corrupti quasi provident aut! Lorem ipsum
+            dolor sit, amet consectetur adipisicing elit. Excepturi mollitia
+            exercitationem totam expedita, sint nesciunt suscipit aliquid ad
+            odio vel omnis, harum optio eos dolore.
+          </p>
+        </div>
+        <div class="about-right">
+          <ul>
+            <li>A</li>
+            <li>B</li>
+            <li>O</li>
+            <li>U</li>
+            <li>T</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Services section -->
+    <section class="service-section" id="service">
+      <div class="services">
+        <div class="service-card">
+          <h3>Card Heading</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
+            aliquam vero ea animi. Dicta quos fuga atque soluta aliquam
+            mollitia.
+          </p>
+        </div>
+        <div class="service-card">
+          <h3>Card Heading</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
+            aliquam vero ea animi. Dicta quos fuga atque soluta aliquam
+            mollitia.
+          </p>
+        </div>
+        <div class="service-card">
+          <h3>Card Heading</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
+            aliquam vero ea animi. Dicta quos fuga atque soluta aliquam
+            mollitia.
+          </p>
+        </div>
+        <div class="service-card">
+          <h3>Card Heading</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
+            aliquam vero ea animi. Dicta quos fuga atque soluta aliquam
+            mollitia.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="conatct-section" id="contact">
+      <div class="contact">
+        <form>
+          <input type="text" placeholder="Name" />
+          <div>
+            <input type="text" placeholder="Email" />
+            <input type="text" placeholder="Phone Number" />
+          </div>
+          <input type="text" placeholder="Address" />
+          <br />
+          <button>Submit Data</button>
+        </form>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
